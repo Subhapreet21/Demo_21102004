@@ -1,0 +1,27 @@
+Q) What is GitHub?
+A)
+-GitHub is a website which is used to store the data permanently
+-It gives us collaboration
+-it gives us a visual experience of the repositories
+
+Q) What is Git?
+A)
+-Git is a version control system used to track the changes in the files or folders
+
+Q) Git commands
+A)
+-Initialize the empty git repository in the local machine=>(git init)
+-To convert untracked file to tracked file and add to staging area=>(git add filename)
+-This is used to write commit message and to local repo=>(git commit -m "msg")
+-This is used to push the code from local repo to remote repo=>(git push url)
+-This command is used to take a copy of remote repo into local repo=>(git clone url)
+-git config --global user.email "subhapreetpatro2004@gmail.com"
+-git config --global user.name "Subhapreet21"
+
+http://vpaste.net/j0Atr
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Q) What is HTML?
+A)
+-Hyper Text Markup Language
+-Used to create a basic structure of a web page
