@@ -233,4 +233,7 @@ A)
 	-Object(math, date, json)
 	-Array
 	-Functions
+
+http://vpaste.net/KCi68
+http://vpaste.net/JvF1F
 	

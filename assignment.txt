@@ -1,0 +1,136 @@
+Q) Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+
+A)
+DATA TYPE:
+Each value in a JavaScript program is associated with a data type. A data type specifies the type of data Number, String, Boolean, Double, etc. Each data type requires different amounts of memory and has some specific operations which can be performed over it. The data types in JavaScript can be categorized into two types.
+
+Variables hold values, and every value has a specific data type that defines the kind of information it holds. These data types are broadly categorized into two groups: Primitive Data Types and Non-Primitive Data Types. Let us discuss it one by one.
+
+1. Primitive Data Types
+Primitive data types are the built-in data types provided by JavaScript. They represent single values and are not mutable. JavaScript supports the following primitive data types:
+
+1.1 Number:
+Number data type in JavaScript can be used to hold decimal values as well as values without decimals.
+Ex:
+let x = 250;
+let y = 40.5;
+console.log("Value of x=" + x);
+console.log("Value of y=" + y);
+
+Output:
+Value of x=250
+Value of y=40.5
+
+1.2 String:
+The string data type in JavaScript represents a sequence of characters that are surrounded by single or double quotes.
+Ex:
+let str = 'Hello All';
+let str1 = "Welcome to my new house";
+console.log("Value of str=" + str);
+console.log("Value of str1=" + str1);
+
+Output:
+Value of str=Hello All
+Value of str1=Welcome to my new house
+
+1.3 Undefined:
+This means that a variable has been declared but has not been assigned a value, or it has been explicitly set to the value `undefined`.
+Ex:
+let x;
+console.log(x); // Outputs: undefined
+
+1.4 Boolean:
+The boolean data type can accept only two values i.e. true and false.
+Ex:
+let x;
+console.log(x); // Outputs: undefined
+
+1.5 Null:
+The null data type is used to represent the absence of an object. Its return type is 'object'.
+Ex:
+let x = null;
+console.log("Value of x=" + x);
+console.log(typeof(x)); //Outputs: object
+
+1.6 BigInt:
+BigInt data type can represent numbers greater than 2^53-1 which helps to perform operations on large numbers. The number is specified by writing ‘n’ at the end of the value
+Ex:
+let bigNum = 123422222222222222222222222222222222222n
+console.log(bigNum)
+
+Ouput:
+123422222222222222222222222222222222222n
+
+1.7 Symbol:
+Symbol data type is used to create objects which will always be unique. these objects can be created using Symbol constructor.
+Ex:
+let sym = Symbol("Hello")
+console.log(typeof(sym));
+console.log(sym);
+
+Ouput:
+symbol
+Symbol(Hello)
+
+2. Non-primitive Data Types
+Non-primitive data types, also known as reference types, are objects and derived data types. They can store collections of values or more complex entities. The two key non-primitive data types in JavaScript are:
+
+Below is a list of Non-primitive data types.
+
+2.1 Object:
+An object in Javascript is an entity having properties and methods. Everything is an object in javascript.
+
+How to create an object in javascript:
+
+‣ Using Constructor Function to define an object:
+// Create an empty generic object
+let obj = new Object();
+
+// Create a user defined object
+let mycar = new Car();
+
+‣ Using Literal notations to define an object:
+// An empty object
+let square = {};
+
+// Here a and b are keys and
+// 20 and 30 are values
+let circle = {a: 20, b: 30};
+
+Ex:
+let person = {
+   firstName: "Luiza",
+   lastName: "Shaikh",
+};
+
+console.log(person.firstName + "  " + person.lastName);
+
+Output:
+Luiza Shaikh
+
+2.2 Array:
+With the help of an array, we can store more than one element under a single name.
+
+Ways to declare a single-dimensional array:
+
+// Call it with no arguments
+let a = new Array();
+
+// Call it with a single numeric argument
+let b = new Array(10);
+
+// Explicitly specify two or more array elements
+let d = new Array(1, 2, 3, "Hello");
+
+Ex:
+let a = new Array();
+let b = new Array(10);
+let d = new Array(1, 2, 3, "Hello");
+console.log("value of a=" + a);
+console.log("value of b" + b);
+console.log("value of d=" + d);
+
+Output:
+value of a=
+value of b,,,,,,,,,
+value of d=1,2,3,Hello
