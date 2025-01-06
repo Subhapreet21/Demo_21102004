@@ -10,6 +10,7 @@ A)
 
 Q) Git commands
 A)
+-To set up your path in git bash=>(cd "file_path")
 -Initialize the empty git repository in the local machine=>(git init)
 -To convert untracked file to tracked file and add to staging area=>(git add filename)
 -This is used to write commit message and to local repo=>(git commit -m "msg")
@@ -17,11 +18,219 @@ A)
 -This command is used to take a copy of remote repo into local repo=>(git clone url)
 -git config --global user.email "subhapreetpatro2004@gmail.com"
 -git config --global user.name "Subhapreet21"
+-Git initialization in the folder=>(git init)
+-git status
+-To add all the files in a particular folder=>(git add .)
+-To link your local repo to your remote repo=>(git remote add origin [url_from_github])
+-To push your files from the local repo to the remote repo=>(git push -u origin master)
+
 
 http://vpaste.net/j0Atr
---------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
 Q) What is HTML?
 A)
 -Hyper Text Markup Language
 -Used to create a basic structure of a web page
+
+##Execution
+
+
+subha@SubhapreetPatro MINGW64 ~
+$ git config --global user.email "subhapreetpatro2004@gmail.com"
+
+subha@SubhapreetPatro MINGW64 ~
+$ git config --global user.name "Subhapreet21"
+
+subha@SubhapreetPatro MINGW64 ~
+$ ^C
+
+
+subha@SubhapreetPatro MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+subha@SubhapreetPatro MINGW64 ~
+$ cd c/Engineering Third Year
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 ~
+$ cd /c/
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd /Engineering Third Year/Semester 6/Campus Recruitment Training
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd /Engineering Third Year/Semester 6/Campus Recruitment Training/
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd /Engineering Third Year/
+bash: cd: too many arguments
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd "/Engineering Third Year/Semester 6/Campus Recruitment Training/"
+bash: cd: /Engineering Third Year/Semester 6/Campus Recruitment Training/: No such file or directory
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd "/Engineering Third Year/"
+bash: cd: /Engineering Third Year/: No such file or directory
+
+subha@SubhapreetPatro MINGW64 /c
+$ cd "C:\Engineering Third Year\Semester 6\Campus Recruitment Training"
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training
+$ git init
+Initialized empty Git repository in C:/Engineering Third Year/Semester 6/Campus Recruitment Training/.git/
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Notes.txt
+        Working of Git.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git add .
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Notes.txt
+        new file:   Working of Git.jpg
+
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git commit -m "Files are added"
+[master (root-commit) abbc428] Files are added
+ 2 files changed, 27 insertions(+)
+ create mode 100644 Notes.txt
+ create mode 100644 Working of Git.jpg
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git remote add origin https://github.com/Subhapreet21/Demo_21102004.git
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 56.68 KiB | 28.34 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Subhapreet21/Demo_21102004.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+subha@SubhapreetPatro MINGW64 /c/Engineering Third Year/Semester 6/Campus Recruitment Training (master)
+$
+
+
+http://vpaste.net/oTM6T
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+##JavaScript##
+
+1)Static Websites: These pages are created with fixed content that is the same for all users. They are built using HTML, CSS, and JavaScript, and don't use a database or server-side scripting languages. Static pages are good for projects with infrequent content changes, like a small business's online brochure. Ex: Facebook login page
+
+2)Dynamic websites: These pages can change based on the user, the time, or other factors. They are built using back-end code and server-side languages like PHP, Ruby, Python, or server-side JavaScript. Dynamic pages are designed for continuous content management, like a news portal. Ex: YouTube recommendations, Google maps, Cricbuzz(scores)
+
+Variables:
+-Used to store data/values/literals
+-Variables are used to store the data
+-They can store any kind of data
+-While taking the same variable names, the latest value will be considered
+-Variables can start with letters,_,$(For JS)
+-Variables can't start with numbers
+-Variables can include letters, numbers,_,$
+-Variables are Case sensitive
+-Space between two variables are not allowed
+
+Types of variables:
+1)var :- Redeclaration and reinitialization possible
+2)let :- Only reinitialization possible
+3)const :- Both are not possible
+
+Ex:
+var username="Rakesh"
+console.log(username);
+
+Here-->var:-variable
+       username:-identifier(Name given for the memory block)
+       Rakesh:-value/data
+   
+-Extension of JavaScript file:-  .js
+
+*In the browser, if we want to run javascript file or css file we must connect those files with html file.*
+
+consol.log(): It is a method to print the output in the developer console
+document.writeln(): It is a method used to print the output on the UI
+
+Q) What is a comment?
+A)
+-Comments are the ignored lines by the browser
+-To give information to the developer
+
+#Types:
+html: <!-- hjadsb,k --!>
+css: /* jhv,bjsd,b */
+javascript: Single-line: //
+            Multi-line: /**/
+
+Q) What is a data type?
+A)
+-Used to specify what kind of data is stored in the variable.
+
+#Types:
+1) Primitive data types:-
+-They are built-in
+-They are immutable
+-They can store only a single value
+	-String
+	-Number
+	-Boolean
+	-Undefined
+	-Null
+	-Symbol
+	-bigint
+
+##String
+-It is a sequence of characters enclosed within "", '', ``(template literals/backticks)
+
+##Number
+-Range: -2^53-1 to +2^53-1 . Upto this range we consider as number data type. Beyond this range it will be bigint.
+
+##Boolean(True/False)
+
+##Undefined: Variables are declared but not initialized with the value
+
+##Null: Empty value or the absence of an object
+-Return type of null is 'object'
+
+##bigint: Any value exceeding the range of number data type/ Any value suffixed with n
+
+##Symbol
+
+
+2) Non-Primitive data types:-
+-They are user defined
+-They are mutable
+-They can store multiple values
+	-Object(math, date, json)
+	-Array
+	-Functions
+	
