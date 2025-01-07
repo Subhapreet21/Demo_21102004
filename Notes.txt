@@ -236,4 +236,68 @@ A)
 
 http://vpaste.net/KCi68
 http://vpaste.net/JvF1F
-	
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Operators:
+-Operators are special symbols used to perform some operations on operands.
+Ex: 10(operand1) +(opertor) 20(operand2)
+
+Types of operators:
+-Unary
+-Binary
+-Ternary(operand1 ? operand2 : operand3)
+
+1) Arithmetic operators
+2) Assignment operators
+3) Relational operators
+4) Logical operators
+
+(1) Arithmetic operators:
+-Addition(+)
+-Subtraction(-)
+-Multiplication(*)
+-Division(/)
+-Modulus(%)
+-Increment(++): Increment will happen with one value
+	-Pre Increment(++a): Increment before execution
+	-Post Increment(a++): Increment after execution
+-Decrement(--): Decrement will happen with one value
+	-Pre Decrement(--a): Decrement before execution
+	-Post Decrement(a--): Decrement after execution
+-Exponentiation(**)
+
+Concatenation: Adding two or more strings
+Typecasting: Converting one data type to another data type
+NaN: Not a Number: It is a property of the global object. It represents a value which is not a number.
+
+(2) Assignment operators:
+-'=', '+=', '-=', '*=', '/=', '%=', '**='
+
+(3) Relational operators:
+-Used to compare two values.
+-Return type: Boolean
+-Ex:>, <, >=, <=, ==, ===(strictly equal to), !=, !==(strictly not equal to)
+
+Q) What is the difference between == and ===?
+A)
+== -> It is used to compare the values
+=== -> It is used to compare the values and the data types
+!= -> It is used to compare the values
+!== -> It is used to compare the values and the data types
+
+(4) Logical operators:
+AND(&&): If both the conditions are true then the output will be true
+OR(||): If any one of the conditions is true or both the conditions are true then the output will be true
+NOT(!): If the condition is true then the output will be false and vice versa
+
+#Decision Making Statements:
+-Used to make decisions based on the conditions
+-Types:
+1) if: It will work for true statements
+2) if-else
+3) else-if ladder
+4) switch
+5) ternary operator
+
+prompt method: This method is used to collect the data from the user. It will display a dialog box with the message and the input field.
