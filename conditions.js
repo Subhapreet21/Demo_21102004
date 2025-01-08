@@ -37,7 +37,8 @@ if (day == 1) {
   console.log("Invalid day");
 }
 
-let d = Number(prompt("Enter a day here: "));
+// let d = Number(prompt("Enter a day here: "));
+let d = 5;
 console.log(d, typeof d);
 switch (d) {
   case 1:

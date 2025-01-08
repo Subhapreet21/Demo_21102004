@@ -300,4 +300,45 @@ NOT(!): If the condition is true then the output will be false and vice versa
 4) switch
 5) ternary operator
 
-prompt method: This method is used to collect the data from the user. It will display a dialog box with the message and the input field.
+prompt(): This method is used to collect the data from the user. It will display a dialog box with the message and the input field.
+
+#Looping Statements:
+-to execute the block of code repeatedly
+1) for loop
+-Will be used when the exact iteration count is known
+Syntax:
+for(initialization; condition; increment/decrement){
+	//code
+}
+2) while loop
+-Will be used when we don't know the iteration count
+Syntax:
+while(condition){
+	//code
+}
+3) do-while loop
+-Will be used when we don't know the iteration count
+Syntax:
+do{
+	//code
+}while(condition)
+
+Q) What are entry control and exit control loops?
+A)
+Entry control loops(for and while loops): The condition is checked at the beginning of the loop. If the condition is false then the loop will not be executed.
+Exit control loops(do-while loop): The condition is checked at the end of the loop. If the condition is false then the loop will be executed at least once.
+
+Minimum iteration count of for loop: 0
+Minimum iteration count of while loop: 0
+Minimum iteration count of do-while loop: 1
+
+Q) What is the difference between break and continue?
+A)
+break: It is used to terminate the loop when the condition is met.
+continue: It is used to skip the current iteration and move to the next iteration when the condition is met.
+
+#Functions:
+-Functions are the block of code that is used to perform a specific task.
+-It is used to avoid the repetition of the code.
+-It is reusable.
+-It is used to make the code more readable and maintainable.
