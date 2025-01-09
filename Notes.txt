@@ -35,7 +35,6 @@ A)
 
 ##Execution
 
-
 subha@SubhapreetPatro MINGW64 ~
 $ git config --global user.email "subhapreetpatro2004@gmail.com"
 
@@ -339,6 +338,37 @@ continue: It is used to skip the current iteration and move to the next iteratio
 
 #Functions:
 -Functions are the block of code that is used to perform a specific task.
+-Function is a non primitive data type
 -It is used to avoid the repetition of the code.
 -It is reusable.
 -It is used to make the code more readable and maintainable.
+
+Syntax:
+function function_name(optional parameters){
+	//code
+}
+function_name(arguments);
+
+Types of functions:
+1) Named function: It is a function that has a name and invoked with the same name.
+2) Anonymous function: It is a function that doesn't have a name to declare and to invoke.
+3) Function expression: It is a function that is assigned to a variable and invoked with the same variable.
+4) Immediate invoking function expression(IIFE): It is a function that is called immediately after the declaration. It can be invoked only once.
+5) Arrow function: It is a function that is used to concise the normal function syntax.
+Syntax:
+()=>{};
+-It is similar to Anonymous function.
+var function_name = (parameters) => {
+	//code
+}
+6) Higher order function: A function that takes another function as an argument or returns a function.
+7) Callback function: A function that is passed as an argument to another function.
+
+-Closure: A function that is enclosed within another function. It has access to the outer function's variables and parameters.
+
+
+#ES6
+-Current version of JavaScript is ES14.
+-ES6 is a stable version of JavaScript.
+ES-ECMAScript
+ECMA-European Computer Manufacturers Association
