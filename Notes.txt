@@ -362,9 +362,9 @@ var function_name = (parameters) => {
 	//code
 }
 6) Higher order function: A function that takes another function as an argument or returns a function.
-7) Callback function: A function that is passed as an argument to another function.
+7) Callback function: A function that is passed as an argument to another function(HOF).
 
--Closure: A function that is enclosed within another function. It has access to the outer function's variables and parameters.
+-Closure: Closure is a memory block where functions are bundled together/functions are nested together by giving accessibility to the inner most function to access the variables of the outer most function.
 
 
 #ES6
@@ -372,3 +372,10 @@ var function_name = (parameters) => {
 -ES6 is a stable version of JavaScript.
 ES-ECMAScript
 ECMA-European Computer Manufacturers Association
+
+Q) What is return keyword?
+A)
+-It is used to return the expression ,variables or the value from the function.
+-It is used to stop the execution of the function.
+
+

@@ -70,3 +70,70 @@ console.log("Bye");
 f();
 
 // If we do not keep the curly braces, then the printing order will be different
+
+// !Return keyword
+function demo2(a, b) {
+  return a + b;
+}
+let y = demo2(5, 5);
+console.log(y);
+
+let y1 = (a, b) => a + b; //implicit return
+let a2 = y1(10, 20);
+console.log(a2);
+
+let z = (a, b) => {
+  //explicit return
+  return a + b;
+};
+let b2 = z(10, 100);
+console.log(b2);
+
+// !Higher order function and callback function
+function hof(a) {
+  return a(10, 5);
+}
+let v = hof(function (a, b) {
+  return a + b;
+});
+console.log(v);
+
+function parent(callback) {
+  //Higher order function
+  return callback;
+}
+console.log(parent(add(10, 20)));
+
+function add(a, b) {
+  //callback function
+  return a + b;
+}
+
+// !Nested function
+// var a5 = 100;
+// let b5 = "Hi";
+
+// function o() {
+//   var user = "Vinay";
+//   let comapny = "Google";
+//   const salary = 1234567890;
+//   console.log(user);
+//   console.log(comapny);
+//   console.log(salary);
+//   console.log(a5, b5);
+// }
+// o();
+
+var a5 = 100;
+let b5 = "Hi";
+
+function o() {
+  var user = "Vinay";
+  let comapny = "Google";
+  const salary = 1234567890;
+  console.log(user);
+  console.log(comapny);
+  console.log(salary);
+  console.log(a5, b5);
+}
+o();
