@@ -379,3 +379,55 @@ A)
 -It is used to stop the execution of the function.
 
 
+#Arrays:
+-Collection of items or values.
+-It is a non primitive data type.
+-It can store both homogeneous and heterogeneous data.
+-It can store multiple values within a single variable.
+
+Syntax:[]
+var array_name = [value1, value2, value3, value4];
+
+Ex:
+
+Q) map and forEach difference
+A)
+-map: It is used to iterate the vaues of the array one by one. It will return new Array from the original array.
+-forEach: It is used to iterate the values of the array one by one. It will not return anything.
+
+methods in array:
+-push(): It is used to add the elements at the end of the array.
+-pop(): It is used to remove the elements from the end of the array.
+-shift(): It is used to remove the elements from the beginning of the array.
+-unshift(): It is used to add the elements at the beginning of the array.
+-splice(): It is used to add or remove the elements from the array.
+-slice(): It is used to copy the elements from the array.
+-concat(): It is used to merge two or more arrays.
+-reverse(): It is used to reverse the elements of the array.
+-join(): It is used to join the elements of the array with the specified separator.
+
+Q) What is Object?
+A)
+-Object is an entity which is used to store the values in key-value pairs.
+-Object is a physical entity which has states(attributes/properties) and behaviors(methods)
+
+Syntax:
+let obj={};
+
+-Note: Object based language+OOPs
+
+Ex:
+let obj = {
+	name:"Sam"
+	age:25
+}
+
+#JSON:
+-JSON stands for JavaScript Object Notation.
+-It is used to transmit the data from client to server and server to client
+Syntax:
+{
+	"key":"value"
+}
+-For JSON no need to sotre it inside variable
+-Both kes and values should be double quoted except for numerical values

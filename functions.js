@@ -137,3 +137,32 @@ function o() {
   console.log(a5, b5);
 }
 o();
+
+function p() {
+  let x1 = 10;
+  let y1 = 20;
+  console.log(x1, y1);
+}
+
+p();
+
+// !Closure function
+function x2() {
+  let a = 10;
+  let b = 20;
+  console.log(a, b);
+  function y2() {
+    let c = "JS";
+    let d = "Python";
+    console.log(c, d);
+    function z2() {
+      const username = "Harish";
+      console.log(username);
+      console.log(a);
+      console.log(d);
+    }
+    z2();
+  }
+  y2();
+}
+x2();
