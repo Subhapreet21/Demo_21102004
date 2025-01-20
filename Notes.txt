@@ -392,8 +392,8 @@ Ex:
 
 Q) map and forEach difference
 A)
--map: It is used to iterate the vaues of the array one by one. It will return new Array from the original array.
--forEach: It is used to iterate the values of the array one by one. It will not return anything.
+-map: It is used to iterate the values of the array one by one. If we return the value, it returns new copied array.
+-forEach: It is used to iterate the values of the array one by one. It will not return anything (undefined).
 
 methods in array:
 -push(): It is used to add the elements at the end of the array.
@@ -424,10 +424,14 @@ let obj = {
 
 #JSON:
 -JSON stands for JavaScript Object Notation.
--It is used to transmit the data from client to server and server to client
+-It is a lightweight technique used to transmit the data from client to server and server to client
 Syntax:
 {
 	"key":"value"
 }
--For JSON no need to sotre it inside variable
--Both kes and values should be double quoted except for numerical values
+-For JSON no need to store it inside variable
+-Both key and values should be double quoted except for numerical values
+
+methods:
+-parseJSON(): It is used to convert the JSON string into the JavaScript object.
+-stringify(): It is used to convert the JavaScript object into the JSON string.

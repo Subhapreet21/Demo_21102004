@@ -32,7 +32,7 @@ x(); // Function expression is executing
 })();
 
 // !Arrow function
-// Different consice ways of writing arrow functions
+// Different concise ways of writing arrow functions
 
 // let a = () => {console.log("Arrow function");}
 // a();

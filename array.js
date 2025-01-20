@@ -67,10 +67,14 @@ let userDetails = {
     streetNo: "3",
     pinCode: "505415",
   },
+  details: function () {
+    `My name is ${this.name} and my age is ${this.age}`;
+  },
 };
 console.log(userDetails);
 console.log(userDetails.address);
 console.log(userDetails.name);
+console.log(userDetails.details);
 
 // !Nested Objects
 let user = {
@@ -123,3 +127,15 @@ function fetchUsers() {
     });
 }
 fetchUsers();
+
+let user_Details = {
+  name: "Sathwik",
+  age: 20,
+  city: "Karimnagar",
+};
+
+let x1 = JSON.stringify(user_Details);
+console.log("JSON Object:" + x1);
+
+let x2 = JSON.parse(x1);
+console.log(x2);
