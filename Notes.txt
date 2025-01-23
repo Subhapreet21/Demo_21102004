@@ -143,6 +143,7 @@ http://vpaste.net/oTM6T
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 ##JavaScript##
+Javascript makes use of interpreter.
 
 1)Static Websites: These pages are created with fixed content that is the same for all users. They are built using HTML, CSS, and JavaScript, and don't use a database or server-side scripting languages. Static pages are good for projects with infrequent content changes, like a small business's online brochure. Ex: Facebook login page
 
@@ -435,3 +436,64 @@ Syntax:
 methods:
 -parseJSON(): It is used to convert the JSON string into the JavaScript object.
 -stringify(): It is used to convert the JavaScript object into the JSON string.
+
+#Asynchronous in javascript
+-To perform multiple tasks in javascript
+
+Methods:
+1) setTimeout(): It is a web api used to perform async operations at specified timeout
+Syntax:
+setTimeout(callbackfn,timeout);
+
+2) setInterval(): It is a web api used to perform async operations at certain time intervals
+Syntax:
+setInterval(callbackfn,timeout);
+
+3) promise: Promise is an object which represents eventual completion or failures of an async operations.
+-The actual way of executing the promise is using instance methods
+(a) then(): It is used to execute fulfilled state
+(b) catch(): It is used to execute rejected state
+(c) finally(): Once promise is settled it will print/run
+
+##States of Promise:
+(i)Pending state
+(ii)Fulfilled state
+(iii)Rejected state
+
+Syntax:
+let p=new Promise((resolve,reject)=>{});
+
+
+4) async & await
+
+async: Async keyword is used to convert synchronous function into asynchronous function and start to execute the promise
+
+await: Await keyword is used to make the function to wait until the promise completes
+
+
+Note: By default, Javascript is synchronous(Single threaded).
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+**#DOM#**
+-DOM stands for Document Object Model
+-DOM is used to add, update, remove the content in the html document.
+-DOM is used to manipulate the content in the html document
+
+#DOM Methods
+1) document.getElementById(""): It is used to select the html element based on the "id atttribute" value
+-id attribute should be unique or it should be used with only one element
+
+2) document.getElementByClassName(""): It is used to select the html element based on "class attribute" value
+-class attribute can be used with multiple elements with common value
+
+3) document.getElementsByTagName(""): It is used to select the html element based on the tag names
+
+4) document.getElementsByName(""): It is used to select html element based on "name attribute" value
+
+-These below methods select the htlm elements based on css selectors.
+5) document.querySelector("#id"): It selects only one element.
+6) document.querySelectorAll(".class"): It selects multiple elements
+
+-innerText: It is a property used to manipulate just the plain text
+-innerHTML: It is a properlty used to add/remove the content along with tags.
