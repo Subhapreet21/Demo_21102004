@@ -509,3 +509,8 @@ Syntax: [...variable];
 Click events:-onclick,ondoubleclick,onsubmit,onchange
 Mouse events:-mouseover,mouseleave
 Key events:-keydown, keyup,keypress(depracated)
+
+#Dynamic Creation of HTML element from Javascript:-
+-To create dynamic element in JavaScript we have a method called as "document.createElement()".
+-To create an attribute we have a method called as "setAttribute()"
+-To remove an attribute we have a method called as "removeAttribute()"

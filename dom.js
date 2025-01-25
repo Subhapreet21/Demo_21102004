@@ -70,10 +70,58 @@
 //   divblock.style.backgroundColor = "aqua";
 // });
 
-let inp = document.querySelector("#inp");
-inp.addEventListener("keydown", () => {
-  console.log("Keydown");
+// let inp = document.querySelector("#inp");
+// inp.addEventListener("keydown", () => {
+//   console.log("Keydown");
+// });
+// inp.addEventListener("keyup", () => {
+//   console.log("KeyUp");
+// });
+
+// let bgcolor = document.querySelectorAll(".bgcolor");
+// console.log(bgcolor);
+
+// [...bgcolor].map((element) => {
+//   console.log(element);
+//   element.addEventListener("mouseover", () => {
+//     console.log(element.innerText);
+//     element.style.backgroundColor = element.innerText;
+//   });
+//   element.addEventListener("mouseleave", () => {
+//     console.log(element.innerText);
+//     element.style.backgroundColor = "transparent";
+//   });
+// });
+
+// !Dynamic creation of html content
+// let ele = document.createElement("h1");
+// ele.innerText = "Dynamic creation of HTML content";
+// // ele.setAttribute("id", "demo");
+// ele.id = "demo";
+
+// // ele.removeAttribute("id");
+// console.log(ele);
+// document.body.appendChild(ele);
+
+// let image = document.createElement("img");
+// image.src = "./assignment3.jpg";
+// console.log(image);
+// document.body.appendChild(image);
+
+let form = document.querySelector("form");
+let username = document.getElementById("uName");
+let mail = document.getElementById("uMail");
+let password = document.getElementById("uPass");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // console.log(event);
+  // console.log("Form sumitted");
+  let uname = username.value;
+  let umail = mail.value;
+  let upass = password.value;
+  let userDetails = { uname, umail, upass };
+  console.log(userDetails);
+  localStorage.setItem("userDteails", JSON.stringify(userDetails));
 });
-inp.addEventListener("keyup", () => {
-  console.log("KeyUp");
-});
+localStorage.clear();
