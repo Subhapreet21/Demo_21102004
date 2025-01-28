@@ -172,14 +172,45 @@
 // document.body.appendChild(mainEle);
 
 let form = document.querySelector("form");
-let useranme = document.getElementById("uName");
+let username = document.getElementById("uName");
 let password = document.getElementById("uPass");
 let gender = document.getElementsByName("gender");
+let check = document.getElementById("check");
+let show = document.getElementById("show");
 console.log(gender);
+
+// ? Hiding and showing the password values
+check.addEventListener("click", (event) => {
+  // console.log(event.target.checked);
+  if (event.target.checked == true) {
+    password.setAttribute("type", "text");
+    show.innerText = "Hide Password";
+  } else {
+    password.setAttribute("type", "password");
+    show.innerText = "Show Password";
+  }
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  let UN = useranme.value;
+  let UN = username.value;
   let UP = password.value;
-  let GN = gender.value;
-  console.log(UN, UP, GN);
+  let gen = "";
+
+  for (let i = 0; i <= gender.length - 1; i++) {
+    // console.log(i);
+    // console.log(gender[i].value);
+    // console.log(gender[i].checked);
+    if (gender[i].checked == true) {
+      gen = gender[i].value;
+    }
+  }
+  // console.log(UN, UP, gen);
+  let userDetails = {
+    username: UN,
+    password: UP,
+    gender: gen,
+  };
+  console.log(userDetails);
+  sessionStorage.setItem("userData", JSON.stringify(userDetails));
 });
