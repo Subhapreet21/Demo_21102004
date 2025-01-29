@@ -515,3 +515,7 @@ Key events:-keydown, keyup,keypress(depracated)
 -To create an attribute we have a method called as "setAttribute()"
 -To remove an attribute we have a method called as "removeAttribute()"
 -Any element which is created in JavaScript will not add directly to the document, we have to use method to manually add it using the "append()" or "appendChild()" method
+
+#Task 
+Take an array of employee objects, where each object contains properties such as epmid, empname, empcompany, empsalary and empaddress where empaddress is further having two more properties of object such as empcity and emparea.
+Print these properties in the form of a table on the ui by using JavaScript.
