@@ -564,5 +564,10 @@ Once you click on the submit button, an alert should be popped on your screen "f
 
 -ReactJS was introduced in 2011 by Facebook
 -Jordan Walke
--At 2013 React was made as open-sourced
+-In 2013 React was made as open-sourced
 -React is free and platform-independent
+
+#To install React app:
+-Install NodeJS
+-node -v
+-npm install create-react-app --globally
