@@ -571,3 +571,6 @@ Once you click on the submit button, an alert should be popped on your screen "f
 -Install NodeJS
 -node -v
 -npm install create-react-app --globally
+-npm init create-react-app myapp
+-npx create-react-app myapp
+-vite react
