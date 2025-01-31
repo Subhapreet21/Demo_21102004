@@ -522,8 +522,10 @@ Print these properties in the form of a table on the ui by using JavaScript.
 
 #Modules
 -Imports/Exports code to another js files
+-It is a feature of ES6 
+-type:"module" :-It is in experimental stage in JavaScript[To explicity define in the browser to classify it as a module]
 
-##Types:
+##Types(ES6 module):
 1) Named Modules
 -Definitely while importing should use the same name that you are defining exactly within {}. 
 -You can export as many modules of code that you want
@@ -536,3 +538,31 @@ Print these properties in the form of a table on the ui by using JavaScript.
 #Assignment
 Create a signup form that contains username(!empty),email(!empty),password(should be 6) and confirm password(same,!empty).
 Once you click on the submit button, an alert should be popped on your screen "from is submitted successfully" if and only if all the validations are correct.
+
+#############################################################################################################################################
+-----------------------------------------------------------REACT JS--------------------------------------------------------------------------
+#Three Tier Architecture for any application:
+1) Presentation Layer(web server)
+2) Application
+3) Database
+
+-Javascript is having some libraries and frameworks.
+>Libraries: It is a collection of codes.
+-Has less set of rules
+-Ex: ReactJs,JQuery
+
+>Frameworks: It is a collection of libraries
+-Has more set of rules
+-Ex: Angular,VueJs
+
+#Important features of ReactJS:
+1) ReactJS is a JavaScript library used to build rich reusable user interfaces.
+2) ReactJS is faster because of "Virtual DOM".
+3) ReactJS follows component-based architecture
+4) ReactJS follows unidirectional data flow.
+5) ReactJS follows both client-side and server-side rendering
+
+-ReactJS was introduced in 2011 by Facebook
+-Jordan Walke
+-At 2013 React was made as open-sourced
+-React is free and platform-independent
