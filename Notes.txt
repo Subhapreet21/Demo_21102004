@@ -574,3 +574,112 @@ Once you click on the submit button, an alert should be popped on your screen "f
 -npm init create-react-app myapp
 -npx create-react-app myapp
 -vite react
+
+#Single page application:
+-Only one HTML file
+-No page reload or refresh
+
+#Multi page application:
+-Multiple HTML files
+-Page reload or refresh occurs
+
+-React is mainly used to create single page applications
+
+# What is VIrtual DOM
+-Virtual DOM is the virtual representation of the UI which is kept in the memory and later
+ synced with the real DOM with the help of a library called ReactDOM.
+-The updation of Real DOM with virtual DOM
+-The entire process of updating the real DOM with the help of virtual DOM is called as reconciliation
+-Diffing algorithm is used to perform one-to-one mapping.
+
+# JSX
+-JSX stands for JavaScript and XML.
+-JSX is a JavaScript syntax extension used to create HTML-like markup in React.
+-Actual way to create an element in React is by using a method called as
+	React.createElement("tagname",{property:"value"}/null,content/children)
+
+Ex: let ele = React.createElement(
+		"div",
+		{ className: "App" },
+		React.createElement("h1", null, "Header")
+  	);
+
+-JSX is not a part of React but it is recommended to use in React
+
+##Rules of JSX:
+1) Every element irrespective of paired/unpaired tag, both must be closed.
+Ex: <h1></h1>
+	<input/>
+
+2) If more than one jsx element is used then they must be wrapped under one parent element.
+Ex: <section>
+      <h1 style={{ color: "red" }}>Name: Subhapreet Patro</h1>
+      <input />
+    </section>
+
+## JSX expression
+-It is used to call the variable or mathematical expression inside the element
+Syntax: <h1>{variable/expression}</h1>
+
+# Components:
+-Components are the files or modules which consist of JavaScript related logicswhich can be reused
+-Components are divided into two types:
+1) Class based components(CBC)
+2) Functional based components(FBC)
+
+(i) Class based components(CBC):
+-CBC is similar to JavaScript ES6 class
+-CBC are "stateful" components because of default state object present inside the class
+
+-Syntax: 
+class Person{
+	constructor(name,age){
+		this.name=name;
+		this.age=age;
+	}
+}
+
+class Child extends Person{
+	constructor(name,age,city){
+		super(name,age);
+		this.city=city;
+	}
+}
+
+-Actual Syntax:
+class App extends React.Component{
+	render(){
+		return(
+			//JSX element
+		)
+	}
+}
+
+export default App;
+
+(ii) Functional based components(FBC):
+-FBC are similar to JavaScript functions
+-FBC are "stateless" because there is no state object until React v16.8
+
+-Syntax:
+function App(){
+	return(
+		//JSX element
+	)
+}
+
+export default App;
+
+OR
+
+const App()=>{
+	return(
+		//JSX element
+	)
+}
+export default App;
+
+Note: While creating a React Component the names must start with capital letters
+-Extension of a component file must be .jsx or .js
+-How to call a component
+	<App/> OR <App></App>
