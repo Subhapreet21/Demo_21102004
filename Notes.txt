@@ -622,7 +622,7 @@ Ex: <section>
 Syntax: <h1>{variable/expression}</h1>
 
 # Components:
--Components are the files or modules which consist of JavaScript related logicswhich can be reused
+-Components are the files or modules which consist of JavaScript related logics which can be reused
 -Components are divided into two types:
 1) Class based components(CBC)
 2) Functional based components(FBC)
@@ -683,3 +683,11 @@ Note: While creating a React Component the names must start with capital letters
 -Extension of a component file must be .jsx or .js
 -How to call a component
 	<App/> OR <App></App>
+
+# Component composition
+-Component composition is used to combine mutiple components into a single application
+
+#Props:
+-props is nothing but properties similar to html attributes
+-props is an object.
+-props is an object used to exchange information or data from parent component to child component
