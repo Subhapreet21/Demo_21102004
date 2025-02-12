@@ -72,16 +72,110 @@
 // export default App;
 
 // ! props
-import React, { Component } from "react";
-import CBCPropEx from "./propsex/CBCPropEx";
+// import React, { Component } from "react";
+// import CBCPropEx from "./propsex/CBCPropEx";
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        App
-        <CBCPropEx username="Subhapreet" />
-      </div>
-    );
-  }
-}
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         App
+//         <CBCPropEx username="Subhapreet" />
+//       </div>
+//     );
+//   }
+// }
+
+// import React, { Component } from "react";
+// import CBCPropEx from "./propsex/CBCPropEx";
+// import FBCPropsEx from "./propsex/FBCPropsEx";
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         {/* <CBCPropEx
+//           username="Subhapreet Patro"
+//           age={20}
+//           hobbies={["Video Games", "Playing chess"]}
+//           address={{ city: "Hyderabad", area: "Narsingi" }}
+//           sendFun={function () {
+//             alert("hi");
+//           }}
+//         /> */}
+//         <FBCPropsEx
+//           username="Rohan"
+//           isMarried={true}
+//           hobbies={["Playing video games", "Playing chess", "Exploring Tech"]}
+//         />
+//       </div>
+//     );
+//   }
+// }
+
+// !props children
+// import React from "react";
+// import PropChildEx from "./propsex/PropChildEx";
+// import SubChild from "./propsex/SubChild";
+// import Child1 from "./propsex/Child1";
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <PropChildEx num={10}>
+//         <h1>This is data coming from props children</h1>
+//         <SubChild />
+//       </PropChildEx> */}
+//       <Child1 university="MRU" />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// !State example
+// import React from "react";
+// import CBCStateEx from "./stateexamples/CBCStateEx";
+// import FBCStateEx from "./stateexamples/FBCStateEx";
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateEx /> */}
+//       <FBCStateEx />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import React from "react";
+import FunctionalComponent from "./components/FunctionalComponent";
+import ClassComponent from "./components/ClassComponent";
+import "./components/styles.css";
+import styles from "./myStyles.module.css";
+import ClassComponent2 from "./components/ClassComponent2";
+import MyForm from "./components/MyForm";
+import UseEffectEx from "./hookexamples/UseEffectEx";
+import RefExamples from "./hookexamples/RefExamples";
+import RefExample2 from "./hookexamples/RefExample2";
+const App = () => {
+  return (
+    <div>
+      {/* <h1 className="heading">This is a styling class</h1>
+      <h2 className={styles.error}>ERROR 404!</h2> */}
+      {/* <FunctionalComponent clgName="MRUH" city="Hyderabad" apply={false}>
+        <h1>Hello,Good afternoon</h1>
+        <p>Success</p>
+      </FunctionalComponent> */}
+      {/* <ClassComponent /> */}
+      {/* <ClassComponent2 /> */}
+      {/* <MyForm /> */}
+      {/* <UseEffectEx /> */}
+      {/* <RefExamples /> */}
+      {/* <RefExample2 /> */}
+    </div>
+  );
+};
+
+export default App;
